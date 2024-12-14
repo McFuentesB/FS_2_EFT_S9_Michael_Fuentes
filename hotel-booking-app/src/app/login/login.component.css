@@ -1,0 +1,94 @@
+/* Formulario de inicio de sesión */
+.login {
+  margin-top: 50px;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card-header {
+  background-color: var(--primary-color);
+  color: white;
+  text-align: center;
+  font-size: 1.8rem;
+  padding: 15px;
+}
+
+.card-body {
+  background-color: var(--card-bg-color);
+  padding: 20px;
+  border-radius: 0 0 12px 12px;
+}
+
+/* Inputs */
+.form-control {
+  border-radius: 8px;
+  transition: box-shadow 0.3s, border-color 0.3s;
+}
+
+.form-control:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+}
+
+/* Botones */
+button {
+  border-radius: 8px;
+  padding: 10px 20px;
+}
+
+.btn-link {
+  display: block;
+  margin-top: 10px;
+  text-align: center;
+  color: var(--link-color);
+}
+
+/* Estilos para pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+  .login {
+    margin-top: 20px;
+    padding: 10px; /* Añadimos un poco de padding para no quedar tan pegado a los bordes */
+    max-width: 90%; /* Dejamos que ocupe más espacio en pantallas pequeñas */
+  }
+
+  .card-header {
+    font-size: 1.5rem; /* Reducimos el tamaño de fuente del encabezado */
+  }
+
+  .card-body {
+    padding: 15px; /* Reducimos un poco el padding */
+  }
+
+  button {
+    padding: 12px 25px; /* Hacemos los botones más grandes para ser más fáciles de usar en móvil */
+  }
+
+  .form-control {
+    font-size: 1rem; /* Ajustamos el tamaño de fuente de los inputs */
+  }
+
+  .btn-link {
+    font-size: 0.9rem; /* Reducimos el tamaño del texto de los links */
+  }
+}
+
+/* Estilos para pantallas medianas (tablets) */
+@media (max-width: 1024px) {
+  .login {
+    margin-top: 30px;
+    max-width: 80%; /* Un poco más de espacio en pantallas medianas */
+  }
+
+  .card-header {
+    font-size: 1.7rem; /* Ajustamos un poco el tamaño de la fuente */
+  }
+
+  .card-body {
+    padding: 18px;
+  }
+
+  button {
+    padding: 10px 20px;
+  }
+}

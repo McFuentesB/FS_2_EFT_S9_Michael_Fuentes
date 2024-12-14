@@ -1,0 +1,72 @@
+/* Contenedor principal */
+.reservas {
+  padding-top: 4rem; /* Ajuste para que no se superponga con la barra de navegación fija */
+}
+
+/* Tarjetas */
+.card {
+  border-radius: 10px;
+}
+
+.card img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.btn-block {
+  width: 100%;
+}
+
+.text-muted {
+  font-size: 1.2rem;
+}
+
+/* Estilo de la barra de navegación */
+.navbar-nav {
+  display: flex;
+  align-items: center;
+}
+
+/* Estilo del botón "Volver" */
+.btn-light {
+  color: #007bff;
+  background-color: white;
+  border: 1px solid #007bff;
+}
+
+.btn-light:hover {
+  background-color: #e9ecef;
+}
+
+/* Responsivo para dispositivos móviles y tablets */
+@media (max-width: 768px) {
+  .navbar-collapse {
+    background-color: #007bff;
+    padding: 1rem;
+  }
+
+  .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .nav-item button {
+    width: 100%;
+    font-size: 1.1rem;
+    padding: 0.75rem;
+    border-radius: 5px;
+  }
+
+  .btn-light {
+    color: white;
+    background-color: #007bff;
+  }
+
+  .btn-light:hover {
+    opacity: 0.9;
+  }
+}

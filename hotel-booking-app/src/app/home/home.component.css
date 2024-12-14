@@ -1,0 +1,88 @@
+/* Contenedor principal */
+.home {
+  margin-top: 80px; /* Espacio para la barra de navegación */
+}
+
+/* Carrusel */
+.simple-carousel {
+  position: relative;
+  overflow: hidden;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.carousel-image {
+  display: none;
+  text-align: center;
+}
+
+.carousel-image.active {
+  display: block;
+}
+
+.carousel-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.caption {
+  margin-top: 10px;
+}
+
+.carousel-controls {
+  margin-top: 20px;
+}
+
+/* Barra de navegación */
+.navbar-collapse {
+  background-color: #007bff;
+  padding: 1rem;
+}
+
+.navbar-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Estilos para botones del menú */
+.nav-item a {
+  font-size: 1.1rem;
+  padding: 0.75rem;
+  border-radius: 5px;
+  width: 100%; /* Asegura que los botones ocupen el ancho completo */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Estilo para dispositivos de escritorio */
+@media (min-width: 769px) {
+  .navbar-nav {
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .nav-item a {
+    width: auto; /* Los botones vuelven a su tamaño original */
+    padding: 0.5rem 1rem;
+  }
+}
+
+/* Estilos específicos para el carrusel */
+.carousel-item img {
+  border-radius: 10px;
+}
+
+.carousel-caption h5 {
+  font-size: 1.5rem;
+  color: white;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.carousel-caption p {
+  color: white;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}

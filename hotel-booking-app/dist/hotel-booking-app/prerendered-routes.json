@@ -1,0 +1,13 @@
+{
+  "routes": [
+    "/",
+    "/admin",
+    "/dashboard",
+    "/home",
+    "/login",
+    "/perfil",
+    "/recuperar",
+    "/registro",
+    "/reservas"
+  ]
+}
